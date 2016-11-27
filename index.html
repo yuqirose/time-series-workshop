@@ -25,7 +25,9 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -60,7 +62,7 @@
                         <a class="page-scroll" href="#keynote">Keynotes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#papers">Accepted Papers & Posters</a>
+                        <a class="page-scroll" href="#papers">Accepted Papers</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#call">CFP</a>
@@ -134,38 +136,43 @@
                      <table class = "table table-striped" border="2" cellpadding="2" cellspacing="2">
                          <tbody>
                              <tr>
-                                 <td>7:30 - 7:50 </td>
+                                 <td>8:30 - 8:40 </td>
                                  <td>Openning Remarks</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>7:50 - 8:30 </td>
-                                 <td>Invited Talk</td>
+                                 <td>8:40 - 9:20 </td>
+                                 <td>Invited Talk: Amnon Shashua</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>8:30 - 8:45 </td>
+                                 <td>9:20 - 10:00 </td>
                                  <td>Contributed Talk</td>
                                  <td> </td>
                              </tr>
                             <tr>
-                                 <td>8:45 - 9:00 </td>
+                                 <td>10:00 - 10:30 </td>
                                  <td>Poster Spotlight 1</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>9:00 - 9:30 </td>
+                                 <td>10:30 - 11:00 </td>
                                  <td>Coffee Break and Poster Session 1 </td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>9:30 - 10:10 </td>
-                                 <td>Invited Talk</td>
+                                 <td>11:00 - 11:40 </td>
+                                 <td>Invited Talk: Lek-Heng Lim</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>10:10 - 10:30 </td>
-                                 <td>Contributed Talk</td>
+                                 <td>11:40 - 12:20 </td>
+                                 <td>Invited Talk: Jimeng Sun</td>
+                                 <td> </td>
+                             </tr>
+                            <tr>
+                                 <td>11:20 - 14:00 </td>
+                                 <td>Lunch</td>
                                  <td> </td>
                              </tr>
                              
@@ -177,32 +184,32 @@
                      <table class = "table table-striped" border="2" cellpadding="2" cellspacing="2">
                          <tbody>
                              <tr>
-                                 <td>16:00 - 16:45 </td>
-                                 <td>Panel Discussion </td>
+                                 <td>14:00 - 14:40 </td>
+                                 <td>Invited Talk: Gregory Valiant</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>16:45 - 17:00 </td>
+                                 <td>14:40 - 15:00 </td>
                                  <td>Poster Spotlight 2 </td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>17:00 - 17:30</td>
+                                 <td>15:00 - 15:30</td>
                                  <td>Coffee Break and Poster Session 2 </td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>17:30 - 18:00 </td>
-                                 <td>Invited Talk</td>
+                                 <td>15:30 - 16:10 </td>
+                                 <td>Invited Talk: Vagelis Papalexias</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>18:00 - 18:30 </td>
-                                 <td>Invited Talk </td>
+                                 <td>16:10 - 17:00 </td>
+                                 <td>PhD Symposium</td>
                                  <td> </td>
                              </tr>
                              <tr>
-                                 <td>18:30 - 19:00 </td>
+                                 <td>17:00 - 18:00 </td>
                                  <td>Panel Discussion and Closing Remarks</td>
                                  <td> </td>
                              </tr>
@@ -238,14 +245,35 @@
                          </div>
                      </div>
                      <div class="col-sm-8 text-left">
-                       <h3>Title: TBD</h3>             
+                         
+                       <h3  >On Depth Efficiency of Convolutional Networks: the use of Hierarchical Tensor Decomposition for Network Design and Analysis</h3>  
+                        <div class="container, col-sm-12 text-left">
+                          <a type="button" class="btn btn-info" data-toggle="collapse" data-target="#amnon">Abstract</a>
+                          <div id="amnon" class="collapse , text-muted" >
+                            Our formal understanding of the inductive bias that drives the success of deep convolutional networks on computer vision tasks is limited. In particular, it is unclear what makes hypotheses spaces born from convolution and pooling operations so suitable for natural images.
+I will present recent work that derive an equivalence between convolutional networks and hierarchical tensor decompositions. Under this equivalence, the structure of a network corresponds to the type of decomposition, and the network weights correspond to the decomposition parameters. This allows analyzing hypotheses spaces of networks by studying tensor spaces of corresponding decompositions, facilitating the use of algebraic and measure theoretical tools.  
+Specifically, the results I will present  include showing how exponential depth efficiency is achieved in a family of deep networks called Convolutional Arithmetic Circuits, show that CAC is equivalent to SimNets, show that depth efficiency is superior to conventional ConvNets and show how inductive bias is tied to correlations between regions of the input image. In particular, 
+correlations are formalized through the notion of separation rank, which for a given input partition, measures how far a function is from being separable.
+I will show that a polynomially sized deep network supports exponentially high separation ranks for certain input partitions, while being limited to polynomial separation ranks for others.
+The network's pooling geometry effectively determines which input partitions are favored, thus serves as a means for controlling the inductive bias.
+Contiguous pooling windows as commonly employed in practice favor interleaved partitions over coarse ones, orienting the inductive bias towards the statistics of natural images.
+In addition to analyzing deep networks, I will show that shallow ones support only linear separation ranks, and by this gain insight into the benefit of functions brought forth by depth -- they are able to efficiently model strong correlation under favored partitions of the input.
+
+This work covers material recently presented in COLT, ICML and CVPR including recent Arxiv submissions. The work was jointly done with doctoral students Nadav Cohen and Or Sharir.
+<hr>
+
+                          </div>
+                        </div>
+                         
+                      <div class="container, col-sm-12 text-left">
                         <p>Prof. Amnon Shashua holds the Sachs chair in computer science at the Hebrew University of Jerusalem. His field of expertise is computer vision and machine learning. For his academic achievements he received the MARR prize Honorable Mention in 2001, the Kaye innovation award in 2004, and the Landau award in exact sciences in 2005.</p>
         <p>In 1999 Prof. Shashua co-founded Mobileye, an Israeli company developing a system-on-chip and computer vision algorithms for a driving assistance system, providing a full range of active safety features using a single camera. Today, approximately 11 million cars from 25 automobile manufacturers rely on Mobileye technology to make their vehicles safer to drive. In August 2014, Mobileye claimed the title for largest Israeli IPO ever, by raising $1B at a market cap of $5.3B. In addition, Mobileye is developing autonomous driving technology with more than a dozen car manufacturers. An early version of Mobileye’s autonomous driving technology was deployed in series as an "autopilot" feature in October, 2015, and will evolve to support more autonomous features in 2016 and beyond. The introduction of autonomous driving capabilities is of a transformative nature and has the potential of changing the way cars are built, driven and own in the future.</p>
         <p>In 2010 Prof. Shashua co-founded OrCam which harnesses computer vision artificial intelligence to assist people who are visually impaired or blind. The OrCam MyEye device is unique in its ability to provide visual aid to hundreds of millions of people, through a discreet wearable platform. Within its wide-ranging scope of capabilities, OrCam’s device can read most texts (both indoors and outdoors) and learn to recognize thousands of new items and faces.</p><br>
-                    
+                         </div>
                      </div>
                  </div>  
-                          <div class="row">
+                 
+                <div class="row">
                      <div class="col-sm-4">
                          <div class="team-member">
                              <img src="img/gregory.jpg" height="150" width="150" class="img-responsive img-circle" alt="Latifur Khan">
@@ -254,7 +282,37 @@
                          </div>
                      </div>
                      <div class="col-sm-8 text-left">
-                       <h3>Title: TBD</h3>
+                       <h3>Orthogonalized Alternating Least Squares: A theoretically principled tensor factorization algorithm for practical use</h3>
+                         
+                        <div class="container, col-sm-12 text-left">
+                          <a type="button" class="btn btn-info" data-toggle="collapse" data-target="#greg">Abstract</a>
+                          <div id="greg" class="collapse, text-muted">
+         From a theoretical perspective, low-rank tensor factorization is an
+algorithmic miracle, allowing for (provably correct) reconstruction
+and learning in a number of settings.  From a practical standpoint, we
+still lack sufficiently robust, versatile, and efficient tensor
+factorization algorithms, particularly for large-scale problems.  Many
+of the algorithms with provable guarantees either suffer from an
+expensive initialization step, and require the iterative removal of
+rank-1 factors, destroying any sparsity that might be present in the
+original tensor.  On the other hand, the most commonly used algorithm
+in practice is "alternating least squares" [ALS], which iteratively
+fixes all but one mode, and optimizes the remaining mode.  This
+algorithm is extremely efficient, but often converges to bad local
+optima, particularly when the weights of the factors are non-uniform.
+In this work, we propose a modification of the ALS approach that
+enjoys practically viable efficiency, as well as provable recovery
+(assuming the factors are random or have small pairwise inner
+products) even for highly non-uniform weights.  We demonstrate the
+significant superiority of our recovery algorithm over the traditional
+ALS on both random synthetic data, and on computing word embeddings
+from a third-order word tri-occurrence tensor.
+
+This is based on joint work with Vatsal Sharan.
+                              <hr>
+                          </div>
+                        </div>
+                         
                        <p>Greg Valiant is an Assistant Professor in the Computer Science Department at Stanford, after completing a postdoc at Microsoft Research, New England. His main research interests are in algorithms, learning, applied probability and statistics; he is also interested in game theory, and has enjoyed working on problems in database theory.</p>
                         <p> Valiant graduated from Harvard with a BA in Math and an MS in Computer Science, and obtained his PhD in Computer Science from UC Berkeley in 2012. </p><br>
                         </p>
@@ -273,7 +331,7 @@
                          </div>
                      </div>
                      <div class="col-sm-8 text-left">
-                       <h3>Title: TBD</h3>
+                       <h3>Tensor network ranks</h3>
                        <p>Lek-Heng Lim is an Assistant Professor in the Computational and Applied Mathematics Initiative, the Department of Statistics, and the College of University of Chicago. His research focuses on tensors and their coordinate representations, hypermatrices. He is interested in the hypermatrix equivalents of various matrix notions, their mathematical and computational properties, and their applications to science and engineering. Another area of Lim's interests is applied/computational algebraic and differential geometry, particularly Hodge Laplacians and geometry of subspaces. Lim is also generally interested in numerical linear algebra, optimization and machine learning. </p>
                          <p>Lim was educated at Stanford University (PhD), Cambridge University, Cornell University (MS), and the National University of Singapore (BS). Prior to joining the University of Chicago as an Assistant Professor, he was the Charles Morrey Assistant Professor at UC Berkeley. Lim serves on the editorial boards of Linear Algebra and its Applications and Linear and Multilinear Algebra. His work is supported by an AFOSR Young Investigator Award, an NSF Early Career Award, and a DARPA Young Faculty Award. </p><br>
                         </p>
@@ -307,7 +365,34 @@
                          </div>
                      </div>
                      <div class="col-sm-8 text-left">
-                       <h3>Title: TBD</h3>
+                       <h3>Tensor decompositions for big multi-aspect data analytics</h3>
+                         <div class="container, col-sm-12 text-left">
+                          <a type="button" class="btn btn-info" data-toggle="collapse" data-target="#vagelis">Abstract</a>
+                          <div id="vagelis" class="collapse, text-muted" >Tensors and tensor decompositions have been very popular and effective tools for analyzing
+multi-aspect data in a wide variety of fields, ranging from Psychology to Chemometrics, 
+and from Signal Processing to Data Mining and Machine Learning. 
+
+Using tensors in the era of big data poses the challenge of scalability and efficiency. 
+In this talk, I will discuss recent techniques on tackling this challenge
+by parallelizing and speeding up tensor decompositions, especially
+for very sparse datasets (such as the ones encountered for example 
+in online social network analysis). 
+
+In addition to scalability, I will also touch upon the challenge of 
+unsupervised quality assessment, where in absence of ground truth, we seek
+to automatically select the decomposition model that captures best the structure
+in our data. 
+
+The talk will conclude with a discussion on future research directions
+and open problems in tensors for big data analytics.  
+                     <hr>
+
+                          </div>
+                        </div>
+                         
+                        
+                         
+                         
                          <p>Evangelos (Vagelis) Papalexakis is an Assistant Professor of the CSE Dept. at University of California Riverside. He obtained his PhD degree at the School of Computer Science at Carnegie Mellon University (CMU), under the supervision of Prof. Christos Faloutsos since August 2011. Prior to joining CMU, he obtained his Diploma and MSc in Electronic & Computer Engineering at the Technical University of Crete, in Greece. </p>
                          <p> Broadly, his research interests span the fields of Data Mining, Machine Learning, and Signal Processing. His research involves designing scalable algorithms for mining large multi-aspect datasets, with specific emphasis on tensor factorization models, and applying those algorithms to a variety of real world multi-aspect data problems. His work has appeared in KDD, ICDM, SDM, ECML-PKDD, WWW, PAKDD, ICDE, ICASSP, IEEE Transactions of Signal Processing, and ACM TKDD.  He has a best student paper award at PAKDD'14, finalist best papers for SDM'14 and ASONAM'13 and he was a finalist for the Microsoft PhD Fellowship and the Facebook PhD Fellowship. Besides his academic experience at CMU, he has industrial research experience working at Microsoft Research Silicon Valley during the summers of 2013 and 2014 and Google Research during the summer of 2015.</p><br>
                         </p>
@@ -323,14 +408,12 @@
     </section>
 
 
-
-
-    <!-- Accepted Papers Section -->
+    <!-- Contributed Talks Section -->
     <section id="papers"  class="bg-mid-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contribute Papers</h2>
+                    <h2 class="section-heading">Accepted Papers</h2>
                 </div>
             </div>
             <div class="row">
@@ -341,21 +424,90 @@
 
 
 
-            <p class="row  large text-muted" >
-                    TBD
-                     
+            <p class="row  large " >
+                <ul>
+                    <li>
+                        <h4>Structurally regularised Non-negative Tensor Completion for latent spatio-temporal change detection</h4>
+                     	Koh Takeuchi, Yoshinobu Kawahara and Tomoharu Iwata
+                    </li>
+                    <li>
+                        <h4>Searching for optimal patterns in Boolean tensors</h4>
+                         Dmitry Ignatov, Sergei O. Kuznetsov, Dmitry Gnatyshak and Jaume Baixeries
+                    </li>
+                    <li>
+                        <h4> Using Tensor Theory to Embed Invariances: A Case Study from Turbulence Modeling</h4>
+                        Julia Ling
+                    </li>
+                    <li>
+                        <h4>Multi-Label Learning with Provable Guarantee</h4>
+                        Sayantan Dasgupta                    </li>      
+                    <li>
+                        <h4>Bayesian multi-tensor factorization	</h4>
+                        Suleiman Ali Khan, Eemeli Leppäaho and Samuel Kaski
+                    </li>
+                    <li>
+                        <h4>Tensor Decomposition with Smoothness</h4>
+                     	Masaaki Imaizumi and Kohei Hayashi
+                    </li>
+                    <li>
+                        <h4>Non-negative Factorization of the Occurrence Tensor from Financial Contracts</h4>
+                         Zheng Xu, Furong Huang, Louiqa Raschid and Tom Goldstein
+                    </li>
+                    <li>
+                        <h4>TensorLy: Tensor Learning in Python	</h4>
+                        Jean Kossaifi, Yannis Panagakis and Maja Pantic	            
+                    </li>
+                    <li>
+                        <h4> Ultimate tensorization: convolutions and FC alike</h4>
+                        Timur Garipov, Dmitry Podoprikhin, Alexander Novikov and Dmitry Vetrov
+                    </li>
+                    <li>
+                        <h4>BaTFLED: Bayesian Tensor Factorization Linked to External Data</h4>
+                        Nathan Lazar, Mehmet Gonen and Kemal Sonmez	                    
+                    </li>               
+                    <li>
+                        <h4>SpTOL: a Large-Scale Sparse Tensor Operation Library for a Single PC</h4>
+                        Jiajia Li, Yuchen Ma, Chenggang Yan, Jimeng Sun and Richard Vuduc	
+                    </li>
+                    <li>
+                        <h4>Approximate Inference in Graphical Models via Low-Rank Tensor Propagation</h4>
+                        Andrew Wrigley, Wee Sun Lee and Nan Ye	
+                    </li>
+                    <li>
+                        <h4>CoFactor: Concise Factorization of Sparse and High-Order Tensors</h4>
+oakeim Perros, Richard Peng, Richard Vuduc and Jimeng Sun
+                    </li>
+                    <li>
+                        <h4>Factorizing Sparse Tensors for Supervised Machine Learning</h4>
+Stephan Baier and Volker Tresp	
+                    </li>      
+                    <li>
+                        <h4>Graph Learning as a Tensor Factorization Problem</h4>
+                        Raphael Bailly and Guillaume Rabusseau	                   
+                    </li>
+                    <li>
+                        <h4>Learning Maliciousness in Cybersecurity Graphs</h4>
+                        Akshay Rangamani, Connor Walsh, Sam Gottlieb and Elisabeth Maida	                    
+                    </li>
+                    <li>
+                        <h4>SenTenCE: A multi-sensor data compression framework using tensor decompositions for human activity classification</h4>
+                        Vinay Uday Prabhu and John Whaley	
+                    </li>      
+
+               
+                 </ul>
             </p>
 
-
-
             </div>
-            <div class="col-lg-1 text-justify">
-              &nbsp;
-            </div>
+     
 
-          </div>
+           </div>
+
         </div>
         </section>
+
+
+
 
     <!-- call for papers -->
     <section id="call">
@@ -401,11 +553,11 @@
             <div class="col-lg-6 text-left">
                 <div class="col-md-12">
                       <p class="large text-muted">
-                      <b>Paper Submission Deadline:</b> Oct 28, 2016, 11:59 PM PST</strike>
+                          <b>Paper Submission Deadline:</b> <strike>Oct 28, 2016, 11:59 PM PST</strike>
                     </p><p class="large text-muted">
-                      <b>Author Notification:</b> Nov 7, 2016, 11:59 PM PST</strike>
+                      <b>Author Notification:</b> <strike>Nov 7, 2016, 11:59 PM PST</strike>
                     </p><p class="large text-muted">
-                      <b>Final Version:</b> Nov 25, 2016, 11:59 PM PST</strike>
+                      <b>Final Version:</b> <strike>Nov 25, 2016, 11:59 PM PST</strike>
                     </p><p class="large text-muted">
                       <b>Workshop:</b> December 10, 2016
                       </p>
