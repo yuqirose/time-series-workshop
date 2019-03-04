@@ -248,7 +248,6 @@ h1,h2,h3,h4,h5,h6
 
 header
 {
-	background-image:url(../img/sydney_night.jpg);
 	background-repeat:none;
 	background-attachment:scroll;
 	background-position:center center;
@@ -257,7 +256,6 @@ header
 	background-size:cover;
 	-o-background-size:cover;
 	text-align:center;
-	color:#fff
 }
 
 header .intro-text
