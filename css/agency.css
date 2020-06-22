@@ -1043,6 +1043,10 @@ body
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  letter-spacing:1px;
 }
 
 /* Change color of dropdown links on hover */
